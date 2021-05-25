@@ -5,25 +5,119 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="css.css">
 <body class="color-change-2x">
-
-    <h1>Website Yves Maurer</h1>
+<div class="flip-2-hor-top-1"><h1>Website Yves Maurer</h1></div>
+    
     <br>
 
 <!-- Content will go here -->
+<div class="swing-top-fwd">
 <video width="320" height="240" controls>
+    <source src="./whatsapp/WhatsApp Video 2021-05-18 at 15.29.25.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video width="320" height="240" controls>
     <source src="./whatsapp/WhatsApp Video 2021-05-11 at 15.58.28.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <br><br>
+</div>
+  <div class="swing-top-fwd">
   <audio controls>
     <source src="./whatsapp/WhatsApp Ptt 2021-05-11 at 16.08.20.ogg" type="audio/ogg">
     Your browser does not support the audio tag.
   </audio>
+  </div>
   <br>
   <br>
 <div class="flip-2-hor-top-1" >
-  <a  class="button bounce-top" href="installation.html">installation</button>
-  <a  class="button bounce-top" href="index.html">back</button>
+  <a  class="button bounce-top" href="installation.html">installation</a>
+  <a  class="button bounce-top" href="index.html">back</a></div>
+<br><br><br><br><br><br>
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade tilt-in-fwd-tr">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://i.ytimg.com/vi/DcRLTClL5YU/maxresdefault.jpg" style="width:100%">
+        <div class="text">Lets Goo!</div>
+      </div>
     
+      <div class="mySlides fade tilt-in-fwd-tr">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://cdn.unitycms.io/image/ocroped/1200,1200,1000,1000,0,0/tJiUSY-Pa-0/6oBYJBM6qFZ81v5VBInf4j.jpg" style="width:100%">
+        <div class="text">ich am schuhe putzen</div>
+      </div>
+    
+      <div class="mySlides fade tilt-in-fwd-tr">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://i.kym-cdn.com/entries/icons/original/000/025/638/big_1519187748_image.jpg" style="width:100%">
+        <div class="text">why are you runnin</div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)" class="tilt-in-fwd-tr">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" class="tilt-in-fwd-tr">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot tilt-in-fwd-tr" onclick="currentSlide(1)"></span>
+      <span class="dot tilt-in-fwd-tr" onclick="currentSlide(2)"></span>
+      <span class="dot tilt-in-fwd-tr" onclick="currentSlide(3)"></span>
+    </div>
+    
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+  <h2>Die Videoformate</h2><br><br><br>
+  <h3>AVI</h3><br><br>
+  <p>AVI ist eines der ältesten Video-Formate und ist dadurch auch recht veraltet. Es ist recht weit verbreitet und auf vielen Geräten verfügbar.</p><br><br><br><br>
+  <h3>MOV</h3><br><br>
+  <p>MOV ist von Apple entwickelt worden und ist nicht auf vielen Endgeräten abspiel bar. Jedoch wird es im Bereich Videoschnitt sehr viel benutzt.</p><br><br><br><br>
+  <h3>MP4</h3><br><br>
+  <p>MP4 ist meiner Meinung nach das beste Videoformat. Es ist auf fast jedem Gerät verfügbar jedoch ist MP4 nicht fürs Streaming geignet.</p><br><br><br><br><br><br><br>
+  <h2>Die Fotoformate</h2><br><br><br>
+  <h3>AVI</h3><br><br>
+  <p>AVI ist eines der ältesten Video-Formate und ist dadurch auch recht veraltet. Es ist recht weit verbreitet und auf vielen Geräten verfügbar.</p><br><br><br><br>
+  <h3>MOV</h3><br><br>
+  <p>MOV ist von Apple entwickelt worden und ist nicht auf vielen Endgeräten abspiel bar. Jedoch wird es im Bereich Videoschnitt sehr viel benutzt.</p><br><br><br><br>
+  <h3>MP4</h3><br><br>
+  <p>MP4 ist meiner Meinung nach das beste Videoformat. Es ist auf fast jedem Gerät verfügbar jedoch ist MP4 nicht fürs Streaming geignet.</p><br><br><br><br><br><br><br>
+  <h2>Die Audio</h2><br><br><br>
+  <h3>AVI</h3><br><br>
+  <p>AVI ist eines der ältesten Video-Formate und ist dadurch auch recht veraltet. Es ist recht weit verbreitet und auf vielen Geräten verfügbar.</p><br><br><br><br>
+  <h3>MOV</h3><br><br>
+  <p>MOV ist von Apple entwickelt worden und ist nicht auf vielen Endgeräten abspiel bar. Jedoch wird es im Bereich Videoschnitt sehr viel benutzt.</p><br><br><br><br>
+  <h3>MP4</h3><br><br>
+  <p>MP4 ist meiner Meinung nach das beste Videoformat. Es ist auf fast jedem Gerät verfügbar jedoch ist MP4 nicht fürs Streaming geignet.</p><br><br><br><br>
+
 </body>
 </html>
