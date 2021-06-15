@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="css.css">
+<style>
+    body {
+        margin: 0;
+        min-height: 3000px;
+        font-family: 'Montserrat', sans-serif;
+   }
+    .outer-container {
+        max-width: 600px;
+        margin: auto;
+        width: 90%;
+        padding: 200px 0px;
+        position: relative;
+   }
+    .image-container {
+        padding-bottom: 100%;
+        background: black;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        background-size: cover;
+        background-position: center;
+   }
+    .section-title {
+        margin: 0;
+        font-size: 64px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: -30%;
+        transform: translateY(-50%);
+        z-index: 1;
+        white-space: nowrap;
+   }
+    .section-title.on-dark {
+        color: white;
+   }
+    .section-title span {
+        position: relative;
+        display: block;
+   }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color:grey   ;
+    color: white;
+  }</style>
+  <body translate="no"></body>
+
+<div class="topnav">
+  <a href="maurer_second.html">Home</a>
+  <a href="formate.html">Formate</a>
+  <a href="animationen.html">Animationen</a>
+  <a href="slideshow.html">Slideshow</a>
+  <a  href="svganimations.html">SVG Animationen</a>
+  <a class="active" href="scroll.html">Scroll Animation</a>
+  <a href="canvas.html">HTML 5 Canvas</a>
+</div>
+<div class="outer-container">
+    <div class="image-container" style="background-image: url('https://i.ytimg.com/vi/D5OJhronLaA/maxresdefault.jpg');">
+      
+      <h2 class="section-title on-dark">
+        <span class="paralax-title">
+          Moooiiiiinnnn Meisteeeee
+        </span>
+      </h2>
+    </div>
+    
+    <h2 class="section-title">
+      <span class="paralax-title">
+        Moooiiiiinnnn Meisteeeee
+      </span>
+    </h2>
+  </div>
+  <script>
+  let didScroll = false;
+  let paralaxTitles = document.querySelectorAll('.paralax-title');
+  
+  const scrollInProgress = () => {
+    didScroll = true
+  }
+  
+  const raf = () => {
+    if(didScroll) {
+      paralaxTitles.forEach((element, index) => {
+        element.style.transform = "translateX("+ window.scrollY / 10 + "%)"
+      })
+      didScroll = false;
+    }
+    requestAnimationFrame(raf);
+  }
+  
+  
+  requestAnimationFrame(raf);
+  window.addEventListener('scroll', scrollInProgress) </script>
+</body>
+</html>

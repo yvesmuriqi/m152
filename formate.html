@@ -32,13 +32,16 @@
     background-color:grey   ;
     color: white;
   }</style>
-<body class="color-change-2x">
+  <body>
 
 <div class="topnav">
   <a href="maurer_second.html">Home</a>
   <a class="active" href="formate.html">Formate</a>
   <a href="animationen.html">Animationen</a>
   <a href="slideshow.html">Slideshow</a>
+  <a href="svganimations.html">SVG Animationen</a>
+  <a href="scroll.html">Scroll Animation</a>
+  <a href="canvas.html">HTML 5 Canvas</a>
 </div>
 
 <div style="padding-left:16px">
@@ -58,8 +61,6 @@
     <source src="./whatsapp/WhatsApp Video 2021-05-18 at 15.29.25.webm" type="video/webm">
     Your browser does not support the video tag.
   </video></div><br><br><br>
-
-
 <h3>MP4</h3>
 <p>MP4 ist meiner Meinung nach das beste Videoformat. Es ist auf fast jedem Gerät verfügbar jedoch ist MP4 nicht fürs Streaming geignet.</p>
 <div><video width="320" height="240" controls>
@@ -67,10 +68,14 @@
     Your browser does not support the video tag.
   </video></div><br><br><br><br><br><br>
 
+
   <br><br>
   <h2>Die Audioformate</h2><br>
   <h3>MP3</h3>
-<p>AVI ist eines der ältesten Video-Formate und ist dadurch auch recht veraltet. Es ist recht weit verbreitet und auf vielen Geräten verfügbar.</p><br>
+<h4>Vorteil:</h4><br>
+  <p>weit verbreitet, von vielen Abspiel-Geräten unterstützt, hohe Kompression</p><br><br>
+  <h4>Nachteil:</h4><br>
+  <p>ggf. hörbarer Qualitätsverlust, vor allem bei kleinen Bitraten</p><br>
 <div class="swing-top-fwd">
     <audio controls>
       <source src="./whatsapp/Beyazz feat. Dante YN - DONT CRY (prod. by JYDN).mp3" type="audio/ogg">
@@ -78,7 +83,10 @@
     </audio>
     </div><br><br><br>
 <h3>OGG</h3>
-<p>WEBM Dateiformate sind für die gebührenfreie Verwendung in HTML5-Videos auf Basis des Matroska-Dateicontainers vorgesehen.</p>
+<h4>Vorteil:</h4><br>
+  <p>gute Kompression bei hoher Sound-Qualität</p><br><br>
+  <h4>Nachteil:</h4><br>
+  <p>kaum verbreitet, nur von wenigen Playern unterstützt</p><br>
 <div class="swing-top-fwd">
     <audio controls>
       <source src="./whatsapp/OctaBattle  Levi 77 vs. 4tune  [4tel-Finale 34].ogg" type="audio/ogg">
@@ -86,7 +94,10 @@
     </audio>
     </div><br><br><br>
 <h3>WAV</h3>
-<p>MP4 ist meiner Meinung nach das beste Videoformat. Es ist auf fast jedem Gerät verfügbar jedoch ist MP4 nicht fürs Streaming geignet.</p>
+<h4>Vorteil:</h4><br>
+<p>muss beim Bearbeiten nicht kodiert / dekodiert werden</p><br><br>
+<h4>Nachteil:</h4><br>
+<p>sehr große Dateien</p><br>
 <div class="swing-top-fwd">
     <audio controls>
       <source src="./whatsapp/SpongeBOZZ - John F. Kennedy (FreeSong) prod. by Digital Drama.wav" type="audio/ogg">
@@ -96,26 +107,46 @@
   <br><br>
 
   <h2>Die Fotoformate</h2><br>
-  <h3>AVI</h3>
-<p>AVI ist eines der ältesten Video-Formate und ist dadurch auch recht veraltet. Es ist recht weit verbreitet und auf vielen Geräten verfügbar.</p>
-<div><video width="320" height="240" controls>
-    <source src="./whatsapp/WhatsApp Video 2021-05-18 at 15.29.25.avi" type="video/mp4">
-    Your browser does not support the video tag.
-  </video></div><br><br><br>
-<h3>WebM</h3>
-<p>WEBM Dateiformate sind für die gebührenfreie Verwendung in HTML5-Videos auf Basis des Matroska-Dateicontainers vorgesehen.</p>
-  <div><video width="320" height="240" controls>
-    <source src="./whatsapp/WhatsApp Video 2021-05-18 at 15.29.25.webm" type="video/mp4">
-    Your browser does not support the video tag.
-  </video></div><br><br><br>
-
-
-<h3>MP4</h3>
-<p>MP4 ist meiner Meinung nach das beste Videoformat. Es ist auf fast jedem Gerät verfügbar jedoch ist MP4 nicht fürs Streaming geignet.</p>
-<div><video width="320" height="240" controls>
-    <source src="./whatsapp/WhatsApp Video 2021-05-18 at 15.29.25.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video></div><br><br><br><br><br><br>
+  <h3>JPEG</h3>
+  <p>Pixel</p>
+<h4>Vorteil:</h4><br>
+  <p>Das JPEG-Bildformat wird von allen Betriebssystemen unterstützt. 
+     Es ist eines der am meisten verbreiteten Bildformate. Das Verhältnis von Bildqualität zu Dateigrösse ist gut.</p><br><br>
+  <h4>Nachteil:</h4><br>
+  <p>JPEG unterstützt keine Transparenzen und keine Animationen. Zudem kann es Qualitätsverluste nach mehrfachem Speichern geben.</p><br>
+<div class="swing-top-fwd">
+    <audio controls>
+      <source src="./whatsapp/Beyazz feat. Dante YN - DONT CRY (prod. by JYDN).mp3" type="audio/ogg">
+      Your browser does not support the audio tag.
+    </audio>
+    </div><br><br><br>
+<h3>PNG</h3>
+<p>Pixel</p>
+<h4>Vorteil:</h4><br>
+  <p>Das PNG-Format unterstützt den Alpha-Kanal bei der Transparenz. 
+     Dieser ist neuer und moderner als der des GIF-Formats. Zudem verwirft das Bildformat, 
+     im Vergleich zu anderen Bildformate, beim erneuten Speichern keine Informationen.</p><br><br>
+  <h4>Nachteil:</h4><br>
+  <p>Der grösste Nachteil steckt in der Dateigrösse. Diese ist im Vergleich zum JPEG-Format riesig. Zudem wird das Format nicht überall unterstützt.</p><br>
+<div class="swing-top-fwd">
+    <audio controls>
+      <source src="./whatsapp/OctaBattle  Levi 77 vs. 4tune  [4tel-Finale 34].ogg" type="audio/ogg">
+      Your browser does not support the audio tag.
+    </audio>
+    </div><br><br><br>
+<h3>SVG</h3>
+<p>Vektor</p>
+<h4>Vorteil:</h4><br>
+<p>Das SVG-Format bietet eine sehr hohe Qualität. Durch das Verwenden von Vektoren gibt es nach der Skalierung oder nach dem Zoomen keinen Qualitätsverlust.</p><br><br>
+<h4>Nachteil:</h4><br>
+<p>Braucht spezielle Software zur Bearbeitung oder HTML Kenntnisse.</p><br>
+<div class="swing-top-fwd">
+    <audio controls>
+      <source src="./whatsapp/SpongeBOZZ - John F. Kennedy (FreeSong) prod. by Digital Drama.wav" type="audio/ogg">
+      Your browser does not support the audio tag.
+    </audio>
+    </div><br><br><br><br><br><br>
+  <br><br>
 </div>
 
 
